@@ -1,0 +1,18 @@
+[project]
+name = "panda-test-001"
+version = "0.0.1"
+description = "Testing pandas"
+authors = [ { name = "Charlie Kim", email = "ckim@juniper.net"} ]
+requires-python = ">=3.9"
+dependencies = [
+    "pandas==2.1.0",
+    "openpyxl==3.1.2",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+pandas-test = "pandas_test_001.pandas_001:hello"
+
